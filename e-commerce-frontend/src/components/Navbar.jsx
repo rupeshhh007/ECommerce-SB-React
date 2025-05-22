@@ -26,7 +26,7 @@ const Navbar = ({ onSelectCategory, onSearch }) => {
         <nav className="navbar navbar-expand-lg fixed-top">
           <div className="container-fluid">
             <a className="navbar-brand" href="https://google.com/">
-              Telusko
+              Rupeshhhh
             </a>
             <button
               className="navbar-toggler"
