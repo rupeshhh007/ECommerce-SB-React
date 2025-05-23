@@ -1,5 +1,6 @@
 package com.rupesh.e_commerce.Models;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import jakarta.persistence.*;
 import java.math.BigDecimal;
 import java.util.Date;
@@ -16,6 +17,8 @@ public class Product {
     private String brand;
     private String category;
     private BigDecimal price;
+
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern="dd-MM-yyyy")
     private Date releaseDate;
     private int quantity;
     private boolean available;
