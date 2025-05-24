@@ -22,8 +22,8 @@ public class Product {
     private BigDecimal price;
 
     private Date releaseDate;
-    private int quantity;
-    private boolean available;
+    private int stockQuantity;
+    private boolean productAvailable;
 
     private String imageName;
     private String imageType;
@@ -89,20 +89,21 @@ public class Product {
         this.releaseDate = releaseDate;
     }
 
-    public int getQuantity() {
-        return quantity;
+    public int getStockQuantity() {
+        return stockQuantity;
     }
 
-    public void setQuantity(int quantity) {
-        this.quantity = quantity;
+    public void setStockQuantity(int stockQuantity) {
+        this.stockQuantity = stockQuantity;
     }
 
-    public boolean isAvailable() {
-        return available;
+    public boolean isProductAvailable() {
+        return productAvailable;
     }
 
-    public void setAvailable(boolean available) {
-        this.available = available;
+
+    public void setProductAvailable(boolean productAvailable) {
+        this.productAvailable = productAvailable;
     }
 
     public String getImageName() {
