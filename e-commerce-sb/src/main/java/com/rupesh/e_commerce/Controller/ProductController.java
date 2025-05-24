@@ -48,6 +48,9 @@ public class ProductController {
 
     try {
         Product product1 = service.addProduct(product, imageFile);
+        return new ResponseEntity<>(product1,HttpStatus.CREATED);
+
+
     }
     catch (Exception e){
         return new ResponseEntity<>(e.getMessage(),HttpStatus.INTERNAL_SERVER_ERROR);

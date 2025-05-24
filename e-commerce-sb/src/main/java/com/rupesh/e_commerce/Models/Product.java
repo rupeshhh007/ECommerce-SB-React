@@ -22,6 +22,11 @@ public class Product {
     private int quantity;
     private boolean available;
 
+    private String imageName;
+    private String imageType;
+    @Lob
+    private byte[] imageDate;
+
     // Getters and setters
 
     public int getId() {
@@ -85,5 +90,17 @@ public class Product {
     }
     public void setAvailable(boolean available) {
         this.available = available;
+    }
+
+    public void setImageName(String imageName) {
+        this.imageName = imageName;
+    }
+
+    public String getImageName() {
+        return imageName;
+    }
+
+    public void setImageType(String imageType) {
+        this.imageType=imageType;
     }
 }

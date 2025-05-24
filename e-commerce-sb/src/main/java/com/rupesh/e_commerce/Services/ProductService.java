@@ -23,6 +23,7 @@ public class ProductService {
 
     public Product addProduct(Product product, MultipartFile imageFile) {
         product.setImageName(imageFile.getOriginalFilename());
+        product.setImageType(imageFile.getContentType());
         repo.save(product);
         return product;
     }
